@@ -15,3 +15,5 @@ You may also see any lint errors in the console.
 Builds the app for production to the `build` folder.\
 The build is minified and the filenames include the hashes.\
 
+## `deploy`
+Open [link](https://trqktop.github.io/SAMEDIA/) to view it in your browser.
