@@ -1,0 +1,34 @@
+.categories__background-item_brown-leaf {
+    background-image: url('./images/categories/brown-leaf.svg');
+    width: 101px;
+    height: 97px;
+    right: 561px;
+    bottom: 90px;
+    animation: brownLeafAnim 50s ease-in infinite alternate;
+}
+
+@media screen and (max-width: 745px) {
+    .categories__background-item_brown-leaf {
+        animation: brownLeafAnimMobile 50s ease-in infinite alternate;
+        right: 10px;
+    }
+
+
+    @keyframes brownLeafAnimMobile {
+        @for $i from 1 through 50 {
+            #{($i * 3%)} {
+                bottom: random(10) + 90px;
+                right: 10px + random(10);
+            }
+        }
+    }
+}
+
+@keyframes brownLeafAnim {
+    @for $i from 1 through 50 {
+        #{($i * 3%)} {
+            bottom: random(10) + 90px;
+            right: 561px + random(10);
+        }
+    }
+}

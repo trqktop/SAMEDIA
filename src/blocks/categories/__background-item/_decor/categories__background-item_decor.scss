@@ -1,0 +1,15 @@
+.categories__background-item_decor {
+    background-image: url('./images/categories/decor.svg');
+    top: 33.01px;
+    right: 587.34px;
+    width: 116.3px;
+    height: 69px;
+    transform: rotate(-57.41deg);
+}
+
+
+@media screen and (max-width:745px) {
+    .categories__background-item_decor{
+        right: calc(50% - 116px);
+    }
+}

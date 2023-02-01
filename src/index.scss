@@ -1,7 +1,22 @@
-$font-size: 11rem;
-$font-color: lch(28 99 35);
-
-html {
-  font-size: $font-size;
-  color: $font-color;
-}
+@import './vendor/normalize.scss';
+@import './fonts.scss';
+@import './blocks/page/page.scss';
+@import './blocks/content/content.scss';
+@import './blocks/categories/categories.scss';
+@import './blocks/categories/__cards-container/categories__cards-container.scss';
+@import './blocks/categories/__cards/categories__cards.scss';
+@import './blocks/categories/__title/categories__title.scss';
+@import './blocks/card/card.scss';
+@import './blocks/card/_hover/card_hover.scss';
+@import './blocks/card/__image/card__image.scss';
+@import './blocks/card/__title/card__title.scss';
+@import './blocks/card/__circles/card__circles.scss';
+@import './blocks/card/__circles/_play/card__circles_play.scss';
+@import './blocks/card/__circle/card__circle.scss';
+@import './blocks/categories/__background/categories__background.scss';
+@import './blocks/categories/__background-item/categories__background-item.scss';
+@import './blocks/categories/__background-item/_circle/categories__background-item_circle.scss';
+@import './blocks/categories/__background-item/_green-sheet/categories__background-item_green-sheet.scss';
+@import './blocks/categories/__background-item/_gray-seeds/categories__background-item_gray-seeds.scss';
+@import './blocks/categories/__background-item/_decor/categories__background-item_decor.scss';
+@import './blocks/categories/__background-item/_brown-leaf/categories__background-item_brown-leaf.scss';

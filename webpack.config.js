@@ -9,7 +9,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'index.[contenthash].js',
         assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
-        clean: true
+        clean: true,
     },
     module: {
         rules: [
@@ -20,27 +20,30 @@ module.exports = {
             },
             {
                 test: /\.(scss|css)$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader',
-                ],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.svg$/,
-                type: 'asset/resource',
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                include: path.resolve(__dirname, "src"),
+                type: "asset/resource",
                 generator: {
-                    filename: path.join('icons', '[name].[contenthash][ext]'),
+                    filename: "assets/[name][ext]",
                 },
             },
+            // {
+            //     test: /\.svg$/,
+            //     type: 'asset/resource',
+            //     generator: {
+            //         filename: path.join('images', '[name].[contenthash][ext]'),
+            //     },
+            // },
             {
                 test: /\.(woff2?|eot|ttf|otf)$/i,
-                type: 'asset/resource',
+                include: path.resolve(__dirname, "src"),
+                type: "asset/resource",
+                generator: {
+                    filename: "assets/[name][ext]",
+                },
             },
         ],
     },

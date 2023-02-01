@@ -1,0 +1,24 @@
+.categories__title {
+    display: block;
+    max-width: fit-content;
+    font-size: 40px;
+    line-height: 49px;
+    color: #201714;
+    padding: 0 0 8px;
+    margin-bottom: 68px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Impact';
+    font-weight: 400;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 88px;
+        height: 4px;
+        background: #FFCC01;
+        border-radius: 99px;
+    }
+}
